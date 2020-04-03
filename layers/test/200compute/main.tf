@@ -266,6 +266,7 @@ module "alb" {
       name               = "antonio-syd-${var.environment}-tg"
       stickiness_enabled = true
       health_check_path  = "/"
+      target_type        = "ip"
     }
   ]
 
